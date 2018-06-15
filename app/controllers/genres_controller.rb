@@ -25,6 +25,6 @@ class GenresController <ApplicationController
   private
 
   def genre_params(*args)
-    params.require(:artist).permit(*args)
+    params.require(:genre).permit(*args)
   end
 end

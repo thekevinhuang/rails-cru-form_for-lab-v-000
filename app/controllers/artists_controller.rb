@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def create
     @artist = Artist.create(artist_params(:name, :bio))
-    redirect_to artist_path(params[:id])
+    redirect_to artist_path(@artist)
   end
 
   def edit
